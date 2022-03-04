@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 import useWindowSize from "../../app/utils/useWindowSize";
 import { groupBy } from 'lodash';
 import Loader from "../../app/components/Loader";
+import MessageItem from "./components/MessageItem";
 
 interface IGroupedComments {
     [date: string]: IComment[];
@@ -14,7 +15,7 @@ interface IGroupedComments {
 
 const MainScreen = () => {
 
-    const [getComments, { data: comments, isLoading: commentsLoading, isUninitialized: commentsUninitialized }] = useLazyGetCommentsQuery();
+    const [getComments, { isLoading: commentsLoading, isUninitialized: commentsUninitialized }] = useLazyGetCommentsQuery();
     const [addComment] = useAddCommentMutation();
 
     const [inputValue, setInputValue] = useState<string>('');
@@ -75,20 +76,7 @@ const MainScreen = () => {
                                 <div className="chat__body__time">{key === moment().format('DD/MM/YYYY') ? 'Today' : key}</div>
                                 {
                                     commentsData[key].map((comment: IComment, index: number) => {
-                                        return <div key={index} className={`message ${comment.parentId ? 'message--reply' : ''}`}>
-                                            <div className="flex">
-                                                <img className="message__img" src={comment.author.picture} alt="profile avatar" />
-                                                <div className="message__bubble">
-                                                    <div className="type--wgt--bold mb-3">{comment.author.name}</div>
-                                                    <div className="type--color--secondary type--break">{comment.text}</div>
-                                                </div>
-                                            </div>
-                                            <div className="message__footer">
-                                                <span className="type--color--secondary">{moment(comment.timestamp).format('HH:mm')}</span>
-                                                <span className="message__dot"></span>
-                                                <span className="message__btn">Reply</span>
-                                            </div>
-                                        </div>
+                                        return <MessageItem key={index} data={comment} />
                                     })
                                 }
                             </div>
