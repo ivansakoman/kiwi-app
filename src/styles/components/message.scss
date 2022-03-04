@@ -20,7 +20,7 @@ $message-img-width: 48px;
         border: 1px solid $border-color;
         border-radius: $border-rounded;
         
-        margin-left: calc(#{$unit} * 3);
+        margin: 0 calc(#{$unit} * 3);
         padding: calc(#{$unit} * 6);
 
         background-color: $white;

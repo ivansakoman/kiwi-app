@@ -1,4 +1,5 @@
 import moment from "moment";
+import useWindowSize from "../../../app/utils/useWindowSize";
 import { IComment } from "../interfaces/IComment";
 
 interface Props {
@@ -13,7 +14,7 @@ const MessageItem = (props: Props) => {
             <img className="message__img" src={author.picture} alt="profile avatar" />
             <div className="message__bubble">
                 <div className="type--wgt--bold mb-3">{author.name}</div>
-                <div className="type--color--secondary type--break">{text}</div>
+                <div className={`type--color--secondary ${useWindowSize().width < 1000 && 'type--break'}`}>{text}</div>
             </div>
         </div>
         <div className="message__footer">
