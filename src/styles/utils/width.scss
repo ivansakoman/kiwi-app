@@ -1,0 +1,31 @@
+/*
+    utils: width
+*/
+
+.w {
+    &--50 {
+        width: 50%;
+        &--px {
+            width: 50px;
+        }
+        &--max {
+            max-width: 50px;
+        }
+    }
+    
+    &--100 {
+        width: 100%;
+    }
+    
+    /* above 100 you don't need to include "px" suffix for pixels, because percentages are valid until 100 */
+    &--680 {
+        width: 680px;
+        
+        &--max {
+            max-width: 680px;
+        }
+    }
+    &--1200 {
+        width: 1200px;
+    }
+}

@@ -1,0 +1,60 @@
+/*
+    components: icons
+*/
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $color-text-primary;
+    mask-repeat: no-repeat;
+    mask-position: 50%;
+    transition: background-color 300ms ease-in-out;
+
+    //icon sizes
+    &--ty {
+        width: calc(#{$unit} * 3);
+        height: calc(#{$unit} * 3);
+    }
+    &--xs {
+        width: calc(#{$unit} * 4);
+        height: calc(#{$unit} * 4);
+    }
+    &--sm {
+        width: calc(#{$unit} * 5);
+        height: calc(#{$unit} * 5);
+    }
+    &--base {
+        width: calc(#{$unit} * 6);
+        height: calc(#{$unit} * 6);
+    }
+    &--md {
+        width: calc(#{$unit} * 8);
+        height: calc(#{$unit} * 8);
+    }
+    &--lg {
+        width: calc(#{$unit} * 10);
+        height: calc(#{$unit} * 10);
+    }
+
+    //icons
+    &--plus {
+        mask-image: url('./../../assets/icons/plus.svg');
+    }
+    &--send {
+        mask-image: url('./../../assets/icons/send.svg');
+    }
+
+    //color modifiers
+    &--primary {
+        background-color: $color-primary;
+    }
+
+    &--white {
+        background-color: $white;
+    }
+
+    &--black {
+        background-color: $black;
+    }
+}

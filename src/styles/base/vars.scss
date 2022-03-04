@@ -1,0 +1,61 @@
+/*
+    base: vars.scss
+*/
+
+//global variables
+$unit: 4px;
+
+//colors
+/*
+    web for naming colors:
+    https://www.color-blindness.com/color-name-hue/
+*/
+$summer-sky: #023168;
+$deep-lilac: #9b59b6;
+$shamrock: #2ecc71;
+$cinnabar: #e74c3c;
+$carrot-orange: #e67e22;
+$ghost: #bcbec2;
+$night-rider: #333;
+$grey: #828282;
+$gainsboro: #d8d8d8;
+
+
+//background colors
+$black: #000;
+$white: #fff;
+$background-color: #ECEEF1;
+$background-overlay: #061129b3;
+
+//main colors
+//-------------------------------------------------
+$color-primary: $summer-sky;
+$color-secondary: $deep-lilac;
+
+//success colors
+$color-success: $shamrock;
+
+//error colors
+$color-error: $cinnabar;
+
+//warning colors
+$color-warning: $carrot-orange;
+
+//shadows 
+$shadow-primary: 2px 4px 24px 0 rgba(0,0,0,0.1);
+
+//borders
+$border-color: #D8DEE7;
+$border-rounded: calc(#{$unit} * 2);
+$border-circle: 1000px;
+
+//typography
+$color-text-primary: $night-rider;
+$color-text-placeholder: $gainsboro;
+$color-text-secondary: #82878D;
+
+//responsive variables
+$responsive-sm: 576px;
+$responsive-md: 768px;
+$responsive-lg: 992px;
+$responsive-xl: 1200px;

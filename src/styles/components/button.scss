@@ -1,0 +1,58 @@
+/*
+    components: button.scss
+*/
+
+
+.btn {
+    --box-shadow-color: #{$black};
+    position: relative;
+    display: inline-block;
+    appearance: none;
+    border: none;
+    border-radius: $border-rounded;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+
+    &:focus {
+        box-shadow: 0 0 2px 2px var(--box-shadow-color);
+        outline: none;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        user-select: none;
+    }
+    //button styles
+    &--primary {
+        background-color: $color-primary;
+        color: $white;
+        &:hover {
+            background-color: darken($color-primary, 10%);
+        }
+        &:active {
+            background-color: darken($color-primary, 15%);
+        }
+        &:focus {
+            --box-shadow-color: #{darken($color-primary, 15%)};
+        }
+    }
+    &--success {
+        background-color: $color-success;
+        color: $white;
+        &:hover {
+            background-color: darken($color-success, 10%);
+        }
+        &:active {
+            background-color: darken($color-success, 15%);
+        }
+        &:focus {
+            --box-shadow-color: #{darken($color-success, 15%)};
+        }
+    }
+
+    //button sizes
+    &--base {
+        padding: calc(#{$unit} * 4) calc(#{$unit} * 4);
+    }
+}

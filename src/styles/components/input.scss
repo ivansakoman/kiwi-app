@@ -1,0 +1,37 @@
+/*
+    components: input
+*/
+
+.input {
+    width: 100%;
+    border: 1px solid $border-color;
+
+    background-color: transparent;
+    transition: all 100ms ease-out;
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        user-select: none;
+        cursor: not-allowed;
+    }
+
+    &::placeholder {
+        color: $color-text-placeholder;
+    }
+
+    //input sizes
+    &--base {
+        padding: calc(#{$unit} * 4) calc(#{$unit} * 4);
+    }
+
+    //input types
+    &--chat {
+      flex-grow: 1;
+      border: none;
+    }
+}

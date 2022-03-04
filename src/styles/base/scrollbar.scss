@@ -1,0 +1,34 @@
+/*
+    base: scrollbar.scss
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-corner {
+    background: #666;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 6px;
+    &:hover {
+        background: #555;
+    }
+    &:active {
+        background: #444;
+    }
+}
+
+//Firefox scrollbars
+* {
+    scrollbar-width: thin;
+}

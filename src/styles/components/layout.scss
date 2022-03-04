@@ -1,0 +1,29 @@
+/*
+    components: layout
+*/
+
+$main-card-width: 1032px;
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__main {
+        width: $main-card-width;
+        padding: calc(#{$unit} * 8);
+        margin: calc(#{$unit} * 6);
+        border-radius: $border-rounded;
+
+        box-shadow: $shadow-primary;
+        background-color: $background-color;
+
+        @media (max-width: 550px) {
+            width: calc(100% - 48px);
+        }
+    }
+}

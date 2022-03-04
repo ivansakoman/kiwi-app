@@ -1,0 +1,59 @@
+/*
+    utils: display
+*/
+
+.d {
+    &--b {
+        display: block;
+    }
+
+    &--ib {
+        display: inline-block;
+    }
+
+    &--none {
+        display: none;
+    }
+
+    @media (min-width: $responsive-sm) {
+        &--sm {
+            &--b {
+                display: block;
+            }
+            &--none {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: $responsive-md) {
+        &--md {
+            &--b {
+                display: block;
+            }
+            &--none {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: $responsive-lg) {
+        &--lg {
+            &--b {
+                display: block;
+            }
+            &--none {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: $responsive-xl) {
+        &--xl {
+            &--b {
+                display: block;
+            }
+            &--none {
+                display: none;
+            }
+        }
+    }
+}

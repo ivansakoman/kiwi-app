@@ -1,0 +1,34 @@
+/*
+    components: chat.scss
+*/
+
+$chat-body-height: calc(70vh - 48px);
+$chat-body-max-height: 750px;
+
+.chat {
+    &__body {
+        overflow-y: auto;
+        height: $chat-body-height;
+        max-height: $chat-body-max-height;
+        margin-bottom: calc(#{$unit} * 6);
+        &__time {
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: calc(#{$unit} * 10)
+        }
+        &--loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        padding: calc(#{$unit} * 2);
+        border-radius: $border-rounded;
+        box-shadow: $shadow-primary;
+    }
+}

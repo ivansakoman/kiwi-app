@@ -1,0 +1,42 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "author": {
+        "name": "Ivana Paradzikovic",
+        "picture": "https://source.unsplash.com/random/?girl"
+      },
+      "text": "Hello there, so I was wondering if you know how much MB is in a GB?",
+      "timestamp": 414514740000
+    },
+    {
+      "id": "2",
+      "parentId": "1",
+      "author": {
+        "name": "Zmaj Sipovski",
+        "picture": "https://source.unsplash.com/random/?dragon"
+      },
+      "text": "Hey Ivana! Have you tried Googling that?",
+      "timestamp": 414514860000
+    },
+    {
+      "id": "2",
+      "parentId": "1",
+      "author": {
+        "name": "Ines Grah",
+        "picture": "https://source.unsplash.com/random/?lady"
+      },
+      "text": "Zmaj has a point, tho I`d say its about 1000MB in a GB.",
+      "timestamp": 414516900000
+    },
+    {
+      "id": "1",
+      "author": {
+        "name": "Pero Pipovski",
+        "picture": "https://source.unsplash.com/random/?man"
+      },
+      "text": "Hey guys, here is a nice web for that comoplicated conversion. www.convertunits.com/from/MB/to/GB",
+      "timestamp": 1626861080278
+    }
+  ]
+}

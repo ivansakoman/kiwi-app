@@ -1,0 +1,78 @@
+/*
+    utils: type
+*/
+
+.type {
+    //sizes
+    &--ty {
+        font-size: 10px;
+    }
+    &--xs {
+        font-size: 12px;
+    }
+    &--sm {
+        font-size: 14px;
+    }
+    &--base {
+        font-size: 16px;
+    }
+    &--md {
+        font-size: 18px;
+    }
+    &--lg {
+        font-size: 20px;
+    }
+    &--xl {
+        font-size: 24px;
+    }
+  
+    //font weight
+    &--wgt {
+        &--light {
+            font-weight: 300;
+        }
+        &--regular {
+            font-weight: 400;
+        }
+        &--semi-bold {
+            font-weight: 500;
+        }
+        &--bold {
+            font-weight: 600;
+        }
+    }
+    // colors
+    &--color {
+        &--primary {
+            color: $color-text-primary;
+        }
+        &--secondary {
+            color: $color-text-secondary;
+        }
+        &--brand {
+            color: $color-primary;
+        }
+        &--error {
+            color: $color-error;
+        }
+        &--success {
+            color: $color-success;
+        }
+    }
+    
+    //style
+    &--uppercase {
+      text-transform: uppercase;
+    }
+  
+    //alignment
+    &--center {
+      text-align: center;
+    }
+
+    //others
+    &--break {
+        word-break: break-all;
+    }
+  }
+  

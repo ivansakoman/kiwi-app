@@ -1,0 +1,15 @@
+/*
+    base: base-styles.scss
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+    color: $color-text-primary;
+    background-color: $color-primary;
+    overflow-x: hidden;
+}
